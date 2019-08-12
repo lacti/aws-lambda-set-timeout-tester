@@ -1,0 +1,24 @@
+service:
+  name: test-set-timeout
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  # region: ap-northeast-2
+
+functions:
+  helloWithPromise:
+    handler: handler.helloWithPromise
+    events:
+      - http:
+          method: get
+          path: helloP
+  helloWithoutPromise:
+    handler: handler.helloWithoutPromise
+    events:
+      - http:
+          method: get
+          path: helloNP

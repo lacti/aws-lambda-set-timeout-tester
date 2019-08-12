@@ -1,0 +1,20 @@
+{
+  "name": "aws-lambda-set-timeout-tester",
+  "version": "1.0.0",
+  "description": "Simple AWS Lambda tester with setTimeout",
+  "main": "handler.ts",
+  "scripts": {},
+  "dependencies": {
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/node": "^10.12.18",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0"
+  },
+  "author": "jaeyoung.choi <lactrious@gmail.com>",
+  "license": "MIT"
+}
